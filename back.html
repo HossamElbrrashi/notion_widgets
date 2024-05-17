@@ -10,7 +10,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,7 +24,11 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+		.nanum-gothic-regular {
+		  font-family: "Nanum Gothic", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
 			padding: 8px;
 			text-align: center;
 			margin: 7px auto;
@@ -32,15 +36,14 @@
 		}
 
 		.navMenu a {
-			color: #272727;
+			color: #6b6b6b;
 			text-decoration: none;
-			text-transform: uppercase;
 			display: inline-block;
 			padding: 6px;
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #ededeb;
 		}
 
 		.border {
@@ -50,15 +53,15 @@
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #ffeccc;
 		}
 	</style>
 </head>
 
 <body>
 
-	<nav class="navMenu  border">
-		<a id="back" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Back</a>
+	<nav class="navMenu  border background">
+		<a id="back" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-arrow-left-long fa-xs" style="color: #6b6b6b;"></i> Back</a>
 
 
 	</nav>
