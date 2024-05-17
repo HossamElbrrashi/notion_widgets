@@ -44,7 +44,7 @@
 		}
 
 		.border {
-			border: 1px solid #cccccc;
+			border: 0px solid #cccccc;
 
 		}
 
@@ -58,7 +58,7 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="back" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Back</a>
 
 
 	</nav>
@@ -74,8 +74,8 @@
 
 		function navigate(id) {
 
-			if (id == 'home')
-				window.open("https://example.com", '_blank').focus();
+			if (id == 'back')
+				window.history.back();
 
 
 		}
